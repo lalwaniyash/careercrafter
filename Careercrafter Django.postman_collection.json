@@ -1,0 +1,748 @@
+{
+	"info": {
+		"_postman_id": "5cc458dd-0625-451f-9663-c2405b8a4ae4",
+		"name": "Careercrafter Django",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34438307"
+	},
+	"item": [
+		{
+			"name": "Jobs",
+			"item": [
+				{
+					"name": "get all jobs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/jobs/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"jobs",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "job",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/jobs/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"jobs",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "new_job",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Test2",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "test2",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "test2",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "test2",
+									"type": "text"
+								},
+								{
+									"key": "jobType",
+									"value": "Permanent",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "Bachelors",
+									"type": "text"
+								},
+								{
+									"key": "industry",
+									"value": "Business",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "No Experience",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "positions",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "company",
+									"value": "asd",
+									"type": "text"
+								},
+								{
+									"key": "lastDate",
+									"value": "2024-05-02T16:10:05.676520Z",
+									"type": "text"
+								},
+								{
+									"key": "createdAt",
+									"value": "2024-04-22T10:40:05.704526Z",
+									"type": "text"
+								},
+								{
+									"key": "user",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/jobs/new/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"jobs",
+								"new",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_job",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "test1"
+								},
+								{
+									"key": "description",
+									"value": "test1"
+								},
+								{
+									"key": "email",
+									"value": "test1@gmail.com"
+								},
+								{
+									"key": "address",
+									"value": "test1 address"
+								},
+								{
+									"key": "jobType",
+									"value": "Temporary"
+								},
+								{
+									"key": "education",
+									"value": "Masters"
+								},
+								{
+									"key": "industry",
+									"value": "IT"
+								},
+								{
+									"key": "experience",
+									"value": "2"
+								},
+								{
+									"key": "salary",
+									"value": "60000"
+								},
+								{
+									"key": "positions",
+									"value": "5"
+								},
+								{
+									"key": "company",
+									"value": "banking"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/jobs/1/update/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"jobs",
+								"1",
+								"update",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_job",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/jobs/2/delete/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"jobs",
+								"2",
+								"delete",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "job-filter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/jobs/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"jobs",
+								""
+							],
+							"query": [
+								{
+									"key": "education",
+									"value": "Bachelors",
+									"disabled": true
+								},
+								{
+									"key": "jobType",
+									"value": "Temporary",
+									"disabled": true
+								},
+								{
+									"key": "min_salary",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "max_salary",
+									"value": "1000",
+									"disabled": true
+								},
+								{
+									"key": "keyword",
+									"value": ".net",
+									"disabled": true
+								},
+								{
+									"key": "location",
+									"value": "delhi",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "yash",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "lalwani",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "yash@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "lalwani@8090",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set('token',pm.response.json().access)"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "yash@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "lalwani@8090",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/token/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"token",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload resume",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE1MzM3NjA3LCJpYXQiOjE3MTQwNDE2MDcsImp0aSI6ImU5NzFlN2YzYjM3ODQwNjc5NTllYzZhZTljOTQ4ZDY4IiwidXNlcl9pZCI6NX0.oH0VlJmILyR-U3cLVPR-NjX6JrJoMv-xgdpzkQXRums",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "resume",
+									"type": "file",
+									"src": "/C:/Users/lalwa/Downloads/Invitation.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/upload/resume/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"upload",
+								"resume",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "get current user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE1MjQzNjI4LCJpYXQiOjE3MTM5NDc2MjgsImp0aSI6IjY0YTIxMTgwMTM3YzQ2YmM5MGFkMzYxMGM5Mjg5MDM1IiwidXNlcl9pZCI6Mn0.YivJHfmKHAXhV3KiVLcaPxHmm5gjCW6JB_VolQoA1WU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/me/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"me",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "apply to job",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE1MzM4NjcxLCJpYXQiOjE3MTQwNDI2NzEsImp0aSI6IjkxOTM0MDU0ZTQxNTQ2OWQ5OWVhNDZmMTk1YmM5NzJhIiwidXNlcl9pZCI6Nn0.i2oTK_ycjiup0Rqx6tFdZNg6-6xT3TdLBYTbH3q5YPU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/jobs/1/apply/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"jobs",
+								"1",
+								"apply",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE1MjQzNjI4LCJpYXQiOjE3MTM5NDc2MjgsImp0aSI6IjY0YTIxMTgwMTM3YzQ2YmM5MGFkMzYxMGM5Mjg5MDM1IiwidXNlcl9pZCI6Mn0.YivJHfmKHAXhV3KiVLcaPxHmm5gjCW6JB_VolQoA1WU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Mr yash",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "lalwani",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "yash@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/me/update/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"me",
+								"update",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get applied jobs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE1MzM4NjcxLCJpYXQiOjE3MTQwNDI2NzEsImp0aSI6IjkxOTM0MDU0ZTQxNTQ2OWQ5OWVhNDZmMTk1YmM5NzJhIiwidXNlcl9pZCI6Nn0.i2oTK_ycjiup0Rqx6tFdZNg6-6xT3TdLBYTbH3q5YPU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/me/jobs/applied/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"me",
+								"jobs",
+								"applied",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check job applied",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE1MzM4NjcxLCJpYXQiOjE3MTQwNDI2NzEsImp0aSI6IjkxOTM0MDU0ZTQxNTQ2OWQ5OWVhNDZmMTk1YmM5NzJhIiwidXNlcl9pZCI6Nn0.i2oTK_ycjiup0Rqx6tFdZNg6-6xT3TdLBYTbH3q5YPU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/jobs/1/check/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"jobs",
+								"1",
+								"check",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user jobs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE1MzM4NjcxLCJpYXQiOjE3MTQwNDI2NzEsImp0aSI6IjkxOTM0MDU0ZTQxNTQ2OWQ5OWVhNDZmMTk1YmM5NzJhIiwidXNlcl9pZCI6Nn0.i2oTK_ycjiup0Rqx6tFdZNg6-6xT3TdLBYTbH3q5YPU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/me/jobs/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"me",
+								"jobs",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get candidates applied",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE1MzM4NjcxLCJpYXQiOjE3MTQwNDI2NzEsImp0aSI6IjkxOTM0MDU0ZTQxNTQ2OWQ5OWVhNDZmMTk1YmM5NzJhIiwidXNlcl9pZCI6Nn0.i2oTK_ycjiup0Rqx6tFdZNg6-6xT3TdLBYTbH3q5YPU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/job/6/candidates/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"job",
+								"6",
+								"candidates",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
